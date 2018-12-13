@@ -1,0 +1,14 @@
+{
+  "name": "yvar",
+  "version": "0.1.0",
+  "description": "",
+  "main": "yvar.js",
+  "dependencies": {
+    "minimist": "1.2.0"
+  },
+  "bin": {
+    "yvar": "./yvar.js"
+  },
+  "author": "Adrian Kuper",
+  "license": "MIT"
+}
