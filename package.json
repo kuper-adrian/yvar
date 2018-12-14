@@ -1,7 +1,7 @@
 {
   "name": "yvar",
   "version": "0.1.0",
-  "description": "",
+  "description": "replace placeholders in files",
   "main": "yvar.js",
   "dependencies": {
     "minimist": "1.2.0"
@@ -10,5 +10,21 @@
     "yvar": "./yvar.js"
   },
   "author": "Adrian Kuper",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuper-adrian/yvar.git"
+  },
+  "keywords": [
+    "yml",
+    "json",
+    "replace",
+    "variable",
+    "placeholder",
+    "file"
+  ],
+  "bugs": {
+    "url": "https://github.com/kuper-adrian/yvar/issues"
+  },
+  "homepage": "https://github.com/kuper-adrian/yvar#readme"
 }
