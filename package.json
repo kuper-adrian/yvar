@@ -1,6 +1,6 @@
 {
   "name": "yvar",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "replace placeholders in files",
   "main": "yvar.js",
   "dependencies": {
