@@ -13,10 +13,10 @@ if (argv._.length !== 2) {
 const templateFilePath = argv._[0];
 const outputFilePath = argv._[1];
 
-let replacementVars = [];
+const replacementVars = [];
 Object.keys(argv).forEach((key) => {
   if (key === '_') return;
-  replacementVars.push({ name: key, value: argv[key] })
+  replacementVars.push({ name: key, value: argv[key] });
 });
 
 const template = fs.readFileSync(templateFilePath, { encoding: 'utf8' });
@@ -30,7 +30,7 @@ function craftRegexExpression(varName) {
   return new RegExp(VARS_FINDER_EXPRESSION_LEFT + varName + VARS_FINDER_EXPRESSION_RIGHT, 'g');
 }
 
-for (let i = 0; i < replacementVars.length; i++) {
+for (let i = 0; i < replacementVars.length; i += 1) {
   const element = replacementVars[i];
   output = output.replace(craftRegexExpression(element.name), element.value);
 }
