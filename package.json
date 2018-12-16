@@ -3,6 +3,10 @@
   "version": "0.1.2",
   "description": "replace placeholders in files",
   "main": "yvar.js",
+  "scripts": {
+    "lint": "eslint *.js",
+    "prepublishOnly": "npm run lint"
+  },
   "dependencies": {
     "minimist": "1.2.0"
   },
